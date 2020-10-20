@@ -3,7 +3,7 @@ pipeline {
     pollSCM ('H/3 * * * *')
   }
   options {
-    disableConcurrentBuilds90
+    disableConcurrentBuilds()
   }
   agent {
     node {
